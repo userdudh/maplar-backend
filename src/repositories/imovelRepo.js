@@ -2,8 +2,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { imoveisDB } from '../../database/db.js';
 import Imovel from '../models/Imovel.js';
 
-export function criarImovel(usuarioId, titulo, valor, tipo, imagem, descricao) {
-  const imovel = new Imovel(usuarioId, titulo, valor, tipo, imagem, descricao);
+export function criarImovel(usuarioId, titulo, valor, tipo, imagem, descricao, quarto, banheiro) {
+  const imovel = new Imovel(usuarioId, titulo, valor, tipo, imagem, descricao, quarto, banheiro);
   imovel.id = uuidv4();
   imoveisDB.push(imovel);
   return imovel;

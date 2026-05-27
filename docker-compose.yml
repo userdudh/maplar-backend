@@ -1,6 +1,6 @@
 services:
   app:
-    image: node:24
+    image: node:lts
     container_name: node_app
     working_dir: /usr/app
     volumes:

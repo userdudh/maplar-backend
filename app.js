@@ -10,5 +10,5 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(PORT, () => {
-  console.log(`Servidor do Maplar a rodar com sucesso na porta: ${PORT}`);
+  console.log(`Servidor do Maplar rodando na porta: ${PORT}`);
 });

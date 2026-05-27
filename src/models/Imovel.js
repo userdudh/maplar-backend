@@ -1,5 +1,5 @@
 export default class Imovel {
-  constructor(usuarioId, titulo, valor, tipo, imagem, descricao) {
+  constructor(usuarioId, titulo, valor, tipo, imagem, descricao, quarto, banheiro) {
     this.usuarioId = usuarioId;
     this.titulo = titulo;
     this.valor = valor;
@@ -7,8 +7,8 @@ export default class Imovel {
     this.imagem = imagem; //TODO 
     this.descricao = descricao;
     // this.tamanho = tamanho;
-    // this.quarto = quarto;
-    // this.banheiro = banheiro;
+    this.quarto = quarto;
+    this.banheiro = banheiro;
     // this.garagem = garagem;
     // this.cep = cep;
     // this.bairro = bairro;
