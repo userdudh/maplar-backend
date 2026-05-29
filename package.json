@@ -4,16 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "prisma generate && nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "cors": "^2.8.5",
     "express": "^5.2.1",
-    "nodemon": "^3.1.10",
-    "uuid": "^14.0.0"
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
   }
 }
